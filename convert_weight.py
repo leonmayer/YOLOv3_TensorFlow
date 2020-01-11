@@ -19,7 +19,7 @@ weight_path = weight_path = '/content/gdrive/My Drive/darknetdata/irrgb/yolov3_i
 save_path = './data/darknet_weights/yolov3.ckpt'
 anchors = parse_anchors('./data/yolo_anchors.txt')
 
-model = yolov3(80, anchors)
+model = yolov3(1, anchors)
 with tf.Session() as sess:
     inputs = tf.placeholder(tf.float32, [1, img_size, img_size, 3])
 
