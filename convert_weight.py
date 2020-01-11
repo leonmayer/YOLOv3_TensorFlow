@@ -14,7 +14,8 @@ from utils.misc_utils import parse_anchors, load_weights
 
 num_class = 80
 img_size = 416
-weight_path = './data/darknet_weights/yolov3.weights'
+#weight_path = './data/darknet_weights/yolov3.weights'
+weight_path = '/content/gdrive/My Drive/darknetdata/yolov3.weights'
 save_path = './data/darknet_weights/yolov3.ckpt'
 anchors = parse_anchors('./data/yolo_anchors.txt')
 
