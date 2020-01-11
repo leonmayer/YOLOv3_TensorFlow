@@ -21,7 +21,7 @@ anchors = parse_anchors('./data/yolo_anchors.txt')
 
 model = yolov3(1, anchors)
 with tf.Session() as sess:
-    inputs = tf.placeholder(tf.float32, [1, img_size, img_size, 3])
+    inputs = tf.placeholder(tf.float32, [1, img_size, img_size, 1])
 
     with tf.variable_scope('yolov3'):
         feature_map = model.forward(inputs)
